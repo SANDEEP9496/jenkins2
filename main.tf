@@ -6,7 +6,7 @@ provider "azurerm" {
 data "azurerm_subscription" "primary" {}
 
 # Define the Role Definition
-resource "azurerm_role_definition" "example" {
+resource "azurerm_role_definition1208" "example" {
   name        = "Owner"
   scope       = data.azurerm_subscription.primary.id
   description = "Example role"
@@ -18,7 +18,7 @@ resource "azurerm_role_definition" "example" {
 }
 
 # Define the Policy Definition (if needed)
-resource "azurerm_policy_definition" "example" {
+resource "azurerm_policy_definition1208" "example" {
   name         = "example_policy"
   policy_type   = "Custom"
   mode          = "All"
