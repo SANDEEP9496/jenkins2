@@ -7,7 +7,7 @@ data "azurerm_subscription" "primary" {}
 
 # Define the Role Definition
 resource "azurerm_role_definition" "example" {
-  name        = "example_role"
+  name        = "Owner"
   scope       = data.azurerm_subscription.primary.id
   description = "Example role"
   
